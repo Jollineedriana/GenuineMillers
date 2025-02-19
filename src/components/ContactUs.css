@@ -1,0 +1,83 @@
+/* ContactUs.css */
+
+/* Container Styling */
+.contact-us-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Title Styling */
+.contact-us-title {
+    font-size: 2.5rem;
+    color: #004085;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Styling */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* Button Styling */
+.contact-form button {
+    background-color: #004085;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Textarea Height */
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-us-container {
+        padding: 20px;
+    }
+
+    .contact-us-title {
+        font-size: 2rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}

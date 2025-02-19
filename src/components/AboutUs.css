@@ -1,0 +1,56 @@
+/* AboutUs.css */
+
+/* Container Styling */
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: url('./background.avif') center/cover no-repeat, #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Title Styling */
+.about-us-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #004085;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Mission Title Styling */
+.about-us-mission-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0056b3;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Text Styling */
+.about-us-text {
+    font-size: 1.5rem;
+    color: #f8f5f5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 30px 15px;
+    }
+
+    .about-us-title, .about-us-mission-title {
+        font-size: 1.8rem;
+    }
+
+    .about-us-text {
+        font-size: 0.95rem;
+    }
+}

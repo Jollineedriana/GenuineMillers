@@ -1,0 +1,63 @@
+/* Navbar container */
+nav {
+    background-color: #333;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar list styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+/* Navbar link styling */
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    background-color: #555;
+    color: #ddd;
+}
+
+/* Active link effect (optional, based on route) */
+nav ul li a.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Responsive Navbar for mobile view */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+}
